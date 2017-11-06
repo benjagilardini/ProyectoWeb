@@ -1,0 +1,85 @@
+body{
+	background-color: #bdbdbd;
+}
+.img_logo {
+	width:100px;
+	height:70px;  
+}
+.nav{
+	background-color: #212121;
+}
+.nav_button{
+	background-color: #212121;
+}
+.contenido_targeta{
+	width: 40%;
+	margin-top: 5%;
+	color: black;
+}
+.targetatit{
+	text-align: center;
+	margin-top: 5%;
+}
+.modal{
+	background-image: url(/home/usuario/Escritorio/Practico/static/IMG/FondoB.jpg);
+}
+.menu{
+	background-color:#263238;
+}
+.titmenu{
+	text-align: center;
+}
+.row{
+	display: flex;
+}
+.contenido_targeta2{
+	text-align: left;
+	width: 100%;
+}
+.contenido_targeta{
+	text-align: left;
+	width: 100%;
+}
+.medio{
+	margin-top: 2.5%;
+	width: 100%;
+}
+.banner{
+	width: 100%
+}
+.novedades{
+	margin-top: 2.5%;
+}
+.imagen{
+	width: 100%;
+}
+.promo1{
+	background-color: #263238;
+}
+.titexp{
+	color: #69f0ae;
+}
+#btnmenu{
+	color: #212121;
+}
+.targeta{
+	background-color: grey;
+}
+.Papas_rusticas{
+	width: 100%
+}
+.btnregresar{
+	background-color: grey;
+	text-align: right;
+}
+.boton{
+	margin-top: 5%;
+}
+.txtenviado{
+	color: black;
+	font-size: 150%;
+}
+.espacio{
+	background-color: white;
+	width: 100%;
+}
