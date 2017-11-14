@@ -1,5 +1,5 @@
 var provider = new firebase.auth.GoogleAuthProvider();
-var datbase = firebase.datbase();
+var database = firebase.database();
 
 function googleSignin() {
    firebase.auth()
@@ -37,3 +37,16 @@ function publicar(){
    var publicaciones = database.ref('publicaciones');
    database.ref('publicaciones').push(data);
 }
+function Actualizar(){
+   var refpublicacion = firebase.database().ref("/publicaciones/");
+   refpublicacion.on("child_added",snapshot =>{
+      base = document.getElementById('foro');
+      parrafo = document.createElement("p");
+      parrafo.innerHTML = snapshot.val().texto;
+      base.append(parrafo);
+   });
+  
+}
+ $(document).ready(function (){
+      Actualizar();
+   });
