@@ -13,22 +13,13 @@
         });
     </script>
     <script>
-        $('.carousel.carousel-slider').carousel({fullWidth: true});
-
-                // Next slide
-        $('.carousel').carousel('next');
-        $('.carousel').carousel('next', 3); // Move next n times.
-
-        // Previous slide
-        $('.carousel').carousel('prev');
-        $('.carousel').carousel('prev', 4); // Move prev n times.
-
-        // Set to nth slide
-        $('.carousel').carousel('set', 4);
-
-        // Destroy carousel
-        $('.carousel').carousel('destroy');
+        $(document).ready(function(){
+      $('.slider').slider();
+    });
     </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
 </head>
 
 <body>
@@ -37,15 +28,8 @@
             <img class="img_logo" src="/home/usuario/Escritorio/Practico/static/IMG/Icono.png">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a>
-                    <a class="waves-effect waves-light btn modal-trigger nav_button" id="btmmenu" href="#menu">Menu</a>
-                    <div id="menu" class="modal menu">
-                        <div class="modal-content">
-                            <u><h4 class="titmenu">Hamburguesas de Carne</h4></u>
-                            <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Salir</a>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="waves-effect waves-light btn modal-trigger nav_button" id="btmmenu" href="menu.html">Menu</a>
+                    
                 </a></li>
                 <li><a>
 
@@ -73,9 +57,7 @@
                     <a class="waves-effect waves-light btn modal-trigger nav_button" href="foro.html">Foro</a>
 
                 </a></li>
-                <li>
-                    <a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">account_circle</i></a>
-                </li>
+                
             </ul>
             
         </div>
@@ -84,6 +66,18 @@
 
     <div class="row">
         <div class="col s4">
+            <div class="card contenido_targeta2">
+                <div class="card-image">
+                    <b><h5 class="targetatit">Conoces el foro?</h5></b>
+                    <img class="imgforo" src="/home/usuario/Escritorio/Practico/static/IMG/imgforo.jpg">
+                    <p>Mediante el foro usted podra comunicarse de forma directa con la empresa MC Donalds, y consultar dudas a los demas usuarios.</p>
+                    <a class="waves-effect waves-teal btn-flat" href="foro.html">Ir al foro</a>
+                    
+                </div>
+                
+                <div class="card-action">
+                </div>
+            </div>
             <div class="card contenido_targeta">
                 <div class="card-image">
                     <b><h5 class="targetatit">Combos mas vendidos!</h5></b>
@@ -106,10 +100,32 @@
             <table>
                 <tr>
                     <td>    
-                        <ul id="inicio" class="tabs medio">
-                        <li class="tab col s3"><a href="#test-swipe-1">Inicio</a></li>
-                        </ul>
-                        <div id="test-swipe-1" class="col s12 blue"><img class="banner" src="/home/usuario/Escritorio/Practico/static/IMG/ImgBanner.png"></div>
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="/home/usuario/Escritorio/Practico/static/IMG/slider1.jpg"> <!-- random image -->
+                                    <div class="caption center-align">
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="/home/usuario/Escritorio/Practico/static/IMG/slider2.jpg"> <!-- random image -->
+                                    <div class="caption left-align">
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="/home/usuario/Escritorio/Practico/static/IMG/slider3.jpg"> <!-- random image -->
+                                    <div class="caption right-align">
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="/home/usuario/Escritorio/Practico/static/IMG/slider4.png"> <!-- random image -->
+                                    <div class="caption center-align">
+                                        <h3>MC DONALDS</h3>
+                                        <h5 class="light grey-text text-lighten-3">Un lugar para disfrutar</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -117,54 +133,55 @@
                         <ul id="tabs-swipe-demo" class="tabs medio novedades">
                             <li class="tab col s3"><a href="#!" class="collection-item">Novedades</a></li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <div> 
-                                <ul class="collapsible" data-collapsible="accordion">
-                                    <li>
-                                        <div class="collapsible-header"><i class="material-icons">local_dining</i>Hamburguesa Guacamole</div>
-                                        <div class="collapsible-body"><span><img src="/home/usuario/Escritorio/Practico/static/IMG/Guacamole.png"></span></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header"><i class="material-icons">local_dining</i>Papas Cheddar Bacon</div>
-                                        <div class="collapsible-body"><span><img src="/home/usuario/Escritorio/Practico/static/IMG/Cheddar.png"></span></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header"><i class="material-icons">local_dining</i>Papas Rusticas</div>
-                                        <div class="collapsible-body"><span><img src="/home/usuario/Escritorio/Practico/static/IMG/Papas_rusticas.png"></span></div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">local_dining</i>Hamburguesa Guacamole</div>
+                                    <div class="collapsible-body guacamole"><span><img src="/home/usuario/Escritorio/Practico/static/IMG/Guacamole.png"></span></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">local_dining</i>Papas Cheddar Bacon</div>
+                                    <div class="collapsible-body"><span><img class="cheddar" src="/home/usuario/Escritorio/Practico/static/IMG/Cheddar.png"></span></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">local_dining</i>Papas Rusticas</div>
+                                    <div class="collapsible-body"><span><img class="rusticas" src="/home/usuario/Escritorio/Practico/static/IMG/Papas_rusticas.png"></span></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">local_dining</i>Otros</div>
+                                    <div class="collapsible-body"><span><img class="goye" src="/home/usuario/Escritorio/Practico/static/IMG/abuelagoye.jpg"></span></div>
+                                </li>
+                            </ul>
+                        </div>
                     </td>
                 </tr>
-                </tr>
+                
             </table>
         </div>       
 
         <div class="col s4">
-            <div class="card contenido_targeta2">
+            <div class="card contenido_targeta3">
+                <div class="card-image">
+                    <b><h5 class="targetatit">Elija Usuario</h5></b>
+                    <img src="/home/usuario/Escritorio/Practico/static/IMG/usuario.png">
+                </div>
+            </div>
+
+            
+            <div class="card contenido_targeta3">
                 <div class="card-image">
                     <b><h5 class="targetatit">Combos del dia!</h5></b>
-                    <img src="/home/usuario/Escritorio/Practico/static/IMG/combodia.jpg">
+                    <img class="materialboxed" width="650" src="/home/usuario/Escritorio/Practico/static/IMG/combodia.jpg">
                 </div>
                 <div class="card-content">
-                    <p>
-                        Por solo 95$ llevas un combo de MC Dondals!
-                    </p>
+                    <p>Por solo 95$ llevas un combo de MC Dondals!</p>
                 </div>
                 <div class="card-action">
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
+ 
 
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large waves-effect waves-light green btn tooltipped" data-position="top" data-delay="50" data-tooltip="A cerca" onclick="$('#info').modal('open');"><i class="material-icons">info_outline</i>
@@ -180,16 +197,39 @@
               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
             </div>
         </div>
-    </div>
+    </div>      
 
-    <div class="carousel">
-        <a class="carousel-item" href="#one!"><img src="/home/usuario/Escritorio/Practico/static/IMG/combodia.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="/home/usuario/Escritorio/Practico/static/IMG/combodia.jpg"></a>
-    </div>          
+        <footer class="page-footer grey">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Curiosidades de la Empresa</h5>
+                <p class="grey-text text-lighten-4">Sabias que?</p>
+                <ul>
+                    <li>1-En un principio, McDonalds vendia hot dogs y no hamburguesas.</li>
+                    <li>2-McDonalds alimenta a 68 millones de personas al dia.</li>
+                    <li>3-La compania vende mas de 75 hamburguesas por segundo.</li>
 
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Link oficial de MC Donalds</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="http://www.mcdonalds.com.ar/">http://www.mcdonalds.com.ar/</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
             
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
 </body>
 
 </html>

@@ -41,7 +41,6 @@ body{
 	width: 100%;
 }
 .medio{
-	margin-top: 2.5%;
 	width: 100%;
 }
 .banner{
@@ -82,4 +81,38 @@ body{
 .espacio{
 	background-color: white;
 	width: 100%;
+}
+.cards{
+	width: 80%;
+}
+.paginass{
+	text-align: center;
+}
+#salirmenu{
+	text-align: right;
+}
+.tdcarde{
+	width: 50%;
+}
+.imgforo{
+	height:170px; 
+}
+.usuarioimg{
+	height: 340px;
+}
+.goye{
+	width: 100%;
+}
+.rusticas{
+	width: 100%;
+}
+.cheddar{
+	width: 100%;
+}
+.guacamole{
+	width: 100%;
+	text-align: center;
+}
+.login{
+	color: white;
 }
