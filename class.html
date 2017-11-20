@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link rel="stylesheet" type="text/css" href="css/class.css">
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>MC Donalds</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/class.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>MC Donalds</title>
+    
     <script>
         $(document).ready(function(){
             $('.modal').modal();
@@ -14,8 +15,8 @@
     </script>
     <script>
         $(document).ready(function(){
-      $('.slider').slider();
-    });
+            $('.slider').slider();
+        });
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -23,30 +24,26 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="nav">
         <div class="nav-wrapper nav">
             <img class="img_logo" src="./static/IMG/Icono.png">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a>
                     <a class="waves-effect waves-light btn modal-trigger nav_button" id="btmmenu" href="menu.html">Menu</a>
-                    
                 </a></li>
                 <li><a>
-
                     <a class="waves-effect waves-light btn modal-trigger nav_button" href="#promos">Promos</a>
                     <div id="promos" class="modal promo1">
                         <div class="modal-content">
                             <h4 class="titexp">MCexperiencia!</h4>
                             <p> En el siguiente enlace http://mcexperiencia.com.ar/ podras ganar descuentos o 2x1!</p>
                             <b><p>Materiales necesarios: Ticket de compra de MC Donalds</p></b>
-
-                        <img class="imagen" src="./static/IMG/Mcexperiencia.png">
+                            <img class="imagen" src="./static/IMG/Mcexperiencia.png">
                         </div>
                         <div class="modal-content">
                             <h4 class="titexp">Llego McDonalds a tu celular</h4>
                             <p> Descargala y comenza a disfrutar de nuestros beneficios!</p>
-
-                        <img class="imagen" src="./static/IMG/Appmc.jpg">
+                            <img class="imagen" src="./static/IMG/Appmc.jpg">
                         </div>
                         <div class="modal-footer">
                             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Salir</a>
@@ -55,11 +52,8 @@
                 </a></li>
                 <li><a>
                     <a class="waves-effect waves-light btn modal-trigger nav_button" href="foro.html">Foro</a>
-
                 </a></li>
-                
             </ul>
-            
         </div>
     </nav>
 
@@ -72,10 +66,6 @@
                     <img class="imgforo" src="./static/IMG/imgforo.jpg">
                     <p>Mediante el foro usted podra comunicarse de forma directa con la empresa MC Donalds, y consultar dudas a los demas usuarios.</p>
                     <a class="waves-effect waves-teal btn-flat" href="foro.html">Ir al foro</a>
-                    
-                </div>
-                
-                <div class="card-action">
                 </div>
             </div>
             <div class="card contenido_targeta">
@@ -94,7 +84,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="col s8">
             <table>
@@ -132,6 +121,30 @@
                     <td>
                         <ul id="tabs-swipe-demo" class="tabs medio novedades">
                             <li class="tab col s3"><a href="#!" class="collection-item">Novedades</a></li>
+                              <a class="btn-floating btn waves-effect waves-light modal-trigger red agregar" href="#modal1"><i class="material-icons">add</i></a>
+
+                            <div id="modal1" class="modal modal-fixed-footer">
+                                <div class="modal-content">
+                                    <h4 class="titnovedad">Crea una Novedad</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="titnov" type="text" class="validate">
+                                            <label for="titnov">Titulo</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            Cargar Imagen:
+                                            <div class="input-field inline">
+                                                <input id="profile-image-upload" class="hidden" type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="waves-effect waves-teal btn-flat">Agregar</a>
+                                </div>
+                            </div>
                         </ul>
                         <div> 
                             <ul class="collapsible" data-collapsible="accordion">
@@ -148,26 +161,49 @@
                                     <div class="collapsible-body"><span><img class="rusticas" src="./static/IMG/Papas_rusticas.png"></span></div>
                                 </li>
                                 <li>
-                                    <div class="collapsible-header"><i class="material-icons">local_dining</i>Otros</div>
+                                    <div class="collapsible-header"><i class="material-icons">local_dining</i>Nuevo MC Flurry</div>
                                     <div class="collapsible-body"><span><img class="goye" src="./static/IMG/abuelagoye.jpg"></span></div>
                                 </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">local_dining</i>Los nuevos Frappes llegan a MC Donalds</div>
+                                    <div class="collapsible-body"><span><img class="goye" src="./static/IMG/frappe.jpg"></span></div>
+                                </li> 
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">insert_emoticon</i>MC Dia Feliz</div>
+                                    <div class="collapsible-body"><span><img class="goye" src="./static/IMG/mcdiafeliz.jpg"></span></div>
+                                </li> 
                             </ul>
                         </div>
                     </td>
                 </tr>
-                
             </table>
         </div>       
 
         <div class="col s4">
             <div class="card contenido_targeta3">
                 <div class="card-image">
-                    <b><h5 class="targetatit">Elija Usuario</h5></b>
-                    <img src="./static/IMG/usuario.png">
+                    <b><h5 class="targetatit">Encuentre su Local mas Cercano!</h5></b>
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var uluru = {lat: -25.363, lng: 131.044};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 4,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAgx734aPHJozzoLI1u5iTFSW2hrTddnAs123&callback=initMap">
+                    </script>
+
                 </div>
             </div>
 
-            
             <div class="card contenido_targeta3">
                 <div class="card-image">
                     <b><h5 class="targetatit">Combos del dia!</h5></b>
@@ -198,38 +234,34 @@
             </div>
         </div>
     </div>      
-
-        <footer class="page-footer grey">
-          <div class="container">
+        
+    <footer class="page-footer footer">
+        <div class="container">
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Curiosidades de la Empresa</h5>
-                <p class="grey-text text-lighten-4">Sabias que?</p>
-                <ul>
-                    <li>1-En un principio, McDonalds vendia hot dogs y no hamburguesas.</li>
-                    <li>2-McDonalds alimenta a 68 millones de personas al dia.</li>
-                    <li>3-La compania vende mas de 75 hamburguesas por segundo.</li>
-
-                </ul>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Link oficial de MC Donalds</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="http://www.mcdonalds.com.ar/">http://www.mcdonalds.com.ar/</a></li>
-                </ul>
-              </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Curiosidades de la Empresa</h5>
+                    <p class="grey-text text-lighten-4">Sabias que?</p>
+                    <ul>
+                        <li>1-En un principio, McDonalds vendia hot dogs y no hamburguesas.</li>
+                        <li>2-McDonalds alimenta a 68 millones de personas al dia.</li>
+                        <li>3-La compania vende mas de 75 hamburguesas por segundo.</li>
+                    </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Link oficial de MC Donalds</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="http://www.mcdonalds.com.ar/">http://www.mcdonalds.com.ar/</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                © 2014 Copyright Text
             </div>
-          </div>
-        </footer>
+        </div>
+    </footer>
             
 
-
 </body>
-
 </html>

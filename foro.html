@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link rel="stylesheet" type="text/css" href="css/class.css">
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>MC Donalds</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/class.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>MC Donalds</title>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
 </head>
 <body>
 	<nav>
         <div class="nav-wrapper nav">
-
             <img class="img_logo" src="./static/IMG/Icono.png">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
           		<li>
           			<a>Bienvenido al Foro!</a>
                 </li>
-
                 <li>
                 	<a class='dropdown-button btn-flat login' href='#' data-activates='dropdown1'>Login</a>
-
 					<ul id='dropdown1' class='dropdown-content'>
 					    <li><a href="#modal" onclick = "googleSignin()">Iniciar</a></li>
 					    <li><a href="#modal" onclick = "googleSignout()">Cerrar Sesion</a></li>
             		</ul>
-                    
                 </li>
                 <li>
 					<a class="btn-floating btn waves-effect waves-light grey" href="class.html"><i class="material-icons">reply</i></a>
             	</li>
+            </ul>
         </div>
     </nav>
 
@@ -50,29 +47,25 @@
   		</button>
     </div>
     
-
     <div class="row" id = "foro">
-        
     </div>
-
-
     <script>
-    var config = {
-    apiKey: "AIzaSyCZy_PUuApEl5kRCBardUM_YBFLQt1eaiQ",
-    authDomain: "proyectoweb-6e499.firebaseapp.com",
-    databaseURL: "https://proyectoweb-6e499.firebaseio.com",
-    projectId: "proyectoweb-6e499",
-    storageBucket: "",
-    messagingSenderId: "58678920089"
-    };
-    firebase.initializeApp(config);
+        var config = {
+        apiKey: "AIzaSyCZy_PUuApEl5kRCBardUM_YBFLQt1eaiQ",
+        authDomain: "proyectoweb-6e499.firebaseapp.com",
+        databaseURL: "https://proyectoweb-6e499.firebaseio.com",
+        projectId: "proyectoweb-6e499",
+        storageBucket: "",
+        messagingSenderId: "58678920089"
+        };
+        firebase.initializeApp(config);
     </script>
     <script>
     	$(document).ready(function(){
+	    	$('.modal').modal();
 	    	$('.modal').modal();
   		});
     </script>
     <script type="text/javascript" src="js/javascript.js"></script>
 </body>	
-
 </html>

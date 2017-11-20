@@ -3,11 +3,10 @@ var database = firebase.database();
 
 function googleSignin() {
    firebase.auth()
-   
    .signInWithPopup(provider).then(function(result) {
       var token = result.credential.accessToken;
       var user = result.user;
-        
+      
       console.log(token)
       console.log(user)
    }).catch(function(error) {
@@ -40,10 +39,7 @@ function publicar(){
 function Actualizar(){
    var refpublicacion = firebase.database().ref("/publicaciones/");
    refpublicacion.on("child_added",snapshot =>{
-      base = document.getElementById('foro');
-      parrafo = document.createElement("p");
-      parrafo.innerHTML = snapshot.val().texto;
-      base.append(parrafo);
+      $('body').append('<div class="divBody">' + snapshot.val().texto + '</div>');
    });
   
 }
