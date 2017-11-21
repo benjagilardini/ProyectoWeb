@@ -130,7 +130,7 @@ body{
 	background-color: #eeeeee;
 }
 .paginacion{
-	text-align: right;
+	text-align: left;
 }
 .enviodetexto{
 	position: absolute;
@@ -161,4 +161,9 @@ body{
 .titnovedad{
     text-align: center;
     text-decoration: underline;
+}
+.responder{
+    margin-bottom: 3%;
+    margin-top: 2.5%;
+    margin-left: 2%;
 }
