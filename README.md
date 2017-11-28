@@ -10,7 +10,7 @@ Elegi realizar esta pagina web ya que como posee alimentos de muy buena calidad 
 ## Division de la Pagina
 ### Inicio
 Ventana principal donde se presenta la informacion basica, en la misma tenemos las novedades, el mapa para ubicar los locales mas cercanos, los combos semanales y algunas curiosidades de mac donalds.
-imagen...
+![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio.png)
 ### Menu
 En la siguiente ventana se muestran los diferentes tipos de alimentos que presenta dicha empresa, tanto hamburguesas, ensaladas o postres.
 imagen...
