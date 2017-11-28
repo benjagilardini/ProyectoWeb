@@ -15,10 +15,10 @@
 <body>
 	<nav>
         <div class="nav-wrapper nav">
-            <img class="img_logo" src="./static/IMG/Icono.png">
+            <a href="index.html"><img class="img_logo" src="./static/IMG/Icono.png"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
           		<li>
-          			<a>Bienvenido al Foro!</a>
+          			<a>Comenta tu experiencia!</a>
                 </li>
                 <li>
                 	<a class='dropdown-button btn-flat login' href='#' data-activates='dropdown1'>Login</a>
@@ -28,7 +28,7 @@
             		</ul>
                 </li>
                 <li>
-					<a class="btn-floating btn waves-effect waves-light grey" href="class.html"><i class="material-icons">reply</i></a>
+					<a class="btn-floating btn waves-effect waves-light grey" href="index.html"><i class="material-icons">reply</i></a>
             	</li>
             </ul>
         </div>
@@ -42,13 +42,15 @@
 
     <div class="row enviodetexto" style="position:fixed">
     	<input id="gettexto" placeholder="Realice un comentario" type="text">
-    	<button class="btn waves-effect waves-light" onclick="publicar();" type="submit" name="action">Publicar
+    	<button class="btn waves-effect waves-light " onclick="publicar();" type="submit" name="action">Publicar
     		<i class="material-icons right">send</i>
   		</button>
     </div>
     
     <div class="row" id = "foro">
     </div>
+    
+    <div id="comments" class="col s12"></div>
     <script>
         var config = {
         apiKey: "AIzaSyCZy_PUuApEl5kRCBardUM_YBFLQt1eaiQ",

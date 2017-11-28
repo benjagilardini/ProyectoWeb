@@ -4,6 +4,9 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="css/class.css">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>MC Donalds</title>
@@ -26,7 +29,7 @@
 <body>
     <nav class="nav">
         <div class="nav-wrapper nav">
-            <img class="img_logo" src="./static/IMG/Icono.png">
+            <a href="index.html"><img class="img_logo" src="./static/IMG/Icono.png"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a>
                     <a class="waves-effect waves-light btn modal-trigger nav_button" id="btmmenu" href="menu.html">Menu</a>
@@ -38,7 +41,7 @@
                             <h4 class="titexp">MCexperiencia!</h4>
                             <p> En el siguiente enlace http://mcexperiencia.com.ar/ podras ganar descuentos o 2x1!</p>
                             <b><p>Materiales necesarios: Ticket de compra de MC Donalds</p></b>
-                            <img class="imagen" src="./static/IMG/Mcexperiencia.png">
+                            <img href="http://mcexperiencia.com.ar/" class="imagen" src="./static/IMG/Mcexperiencia.png">
                         </div>
                         <div class="modal-content">
                             <h4 class="titexp">Llego McDonalds a tu celular</h4>
@@ -51,7 +54,7 @@
                     </div>
                 </a></li>
                 <li><a>
-                    <a class="waves-effect waves-light btn modal-trigger nav_button" href="foro.html">Foro</a>
+                    <a class="waves-effect waves-light btn modal-trigger nav_button" href="foro.html">Experiencias</a>
                 </a></li>
             </ul>
         </div>
@@ -86,7 +89,7 @@
         </div>
 
         <div class="col s8">
-            <table>
+            <table class="tabla">
                 <tr>
                     <td>    
                         <div class="slider">
@@ -121,30 +124,6 @@
                     <td>
                         <ul id="tabs-swipe-demo" class="tabs medio novedades">
                             <li class="tab col s3"><a href="#!" class="collection-item">Novedades</a></li>
-                              <a class="btn-floating btn waves-effect waves-light modal-trigger red agregar" href="#modal1"><i class="material-icons">add</i></a>
-
-                            <div id="modal1" class="modal modal-fixed-footer">
-                                <div class="modal-content">
-                                    <h4 class="titnovedad">Crea una Novedad</h4>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="titnov" type="text" class="validate">
-                                            <label for="titnov">Titulo</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            Cargar Imagen:
-                                            <div class="input-field inline">
-                                                <input id="profile-image-upload" class="hidden" type="file">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <a class="waves-effect waves-teal btn-flat">Agregar</a>
-                                </div>
-                            </div>
                         </ul>
                         <div> 
                             <ul class="collapsible" data-collapsible="accordion">
@@ -179,28 +158,51 @@
             </table>
         </div>       
 
-        <div class="col s4">
+        <div class="col s4 local">
             <div class="card contenido_targeta3">
                 <div class="card-image">
                     <b><h5 class="targetatit">Encuentre su Local mas Cercano!</h5></b>
                     <div id="map"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
                     <script>
+                        var map;
+                        var service;
+                        var infowindow;
+
                         function initMap() {
-                            var uluru = {lat: -25.363, lng: 131.044};
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 4,
-                                center: uluru
+                            var pyrmont = {lat: -31.4135000, lng: -64.1810500};
+                            map = new google.maps.Map(document.getElementById('map'), {
+                                center: pyrmont,
+                                zoom: 12,
+                                styles: [{
+                                stylers: [{ visibility: 'on' }]
+                                }, {
+                                elementType: 'labels',
+                                stylers: [{ visibility: 'on' }]
+                                }]
                             });
-                            var marker = new google.maps.Marker({
-                                position: uluru,
-                                map: map
-                            });
+
+                            var request = {location: pyrmont, radius: '1', query: 'mcdonalds'};
+                            service = new google.maps.places.PlacesService(map);
+                            service.textSearch(request, callback);
                         }
+
+                        function callback(results, status) {    
+                            if (status == google.maps.places.PlacesServiceStatus.OK) {
+                                for (var i = 0; i < results.length; i++) {
+                                    var place = results[i];
+                                    createMarker(results[i]);
+                                }
+                            }
+                        }
+                        function createMarker(place){
+                            var placeLoc = place.geometry.location;
+                            var marker = new google.maps.Marker({map: map, position: placeLoc});
+                            }
                     </script>
                     <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAgx734aPHJozzoLI1u5iTFSW2hrTddnAs123&callback=initMap">
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGC76AIWmzVrn9xBsiTCBDjMZ_ej3HhpM&libraries=places&callback=initMap">
                     </script>
-
                 </div>
             </div>
 
@@ -220,11 +222,11 @@
  
 
     <div class="fixed-action-btn">
-        <a class="btn-floating btn-large waves-effect waves-light green btn tooltipped" data-position="top" data-delay="50" data-tooltip="A cerca" onclick="$('#info').modal('open');"><i class="material-icons">info_outline</i>
+        <a class="btn-floating btn-large waves-effect modal-trigger green btn tooltipped" data-position="top" data-delay="50" data-tooltip="A cerca" href="#modal4"><i class="material-icons">info_outline</i>
             <i class="large material-icons"></i>
         </a>
     
-        <div id="info" class="modal">
+        <div id="modal4" class="modal info">
             <div class="modal-content">
                 <h4>Cual es la finalidad de esta pagina web?</h4>
                 <p>Esta pagina fue creada con el fin de proporcionar al usuario informacion sobre la empresa MC Donalds para conocer los diferentes tipos de alimentos y los valores nutricionales que presentan, asi como tambien los diferentes combos, promociones y demas novedades que la misma presenta. </p>
@@ -248,7 +250,7 @@
                     </ul>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Link oficial de MC Donalds</h5>
+                    <h5 class="white-text textomc">Link oficial de MC Donalds</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="http://www.mcdonalds.com.ar/">http://www.mcdonalds.com.ar/</a></li>
                     </ul>
@@ -257,7 +259,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
+                © 2017 Copyright BenjaG
             </div>
         </div>
     </footer>
