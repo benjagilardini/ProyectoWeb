@@ -17,16 +17,18 @@ Ventana principal donde se presenta la informacion basica, en la misma tenemos l
 #### En la siguiente imagen veremos la forma en que se muestran las novedades en la pagina de inicio:
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio3.png)
 ### Menu
-En la siguiente ventana se muestran los diferentes tipos de alimentos que presenta dicha empresa, tanto hamburguesas, ensaladas o postres.
-En la siguiente imagen podemos ver una de las categorias de alimentos de la empresa. Si Clickeamos en la imagen aparecen los valores nutricionales de los alimentos
+Ventana donde se muestran los diferentes tipos de alimentos que presenta dicha empresa, tanto hamburguesas, ensaladas o postres.
+En la siguiente imagen podemos ver una de las categorias de alimentos de la empresa. Si Clickeamos en la imagen aparecen los valores nutricionales de los alimentos.
+#### Categoria-Hamburguesas de carne
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Menu1.png)
 #### Valores Nutricionales:
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Menu2.png)
-Otra categoria- Postres:
+#### Otra categoria- Postres:
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Menu3.png)
-### Foro
-En est ventana el usuario podra comentar las publicaciones de otros usuarios o crear su propia publicacion. Tambien se podra logear con google.
-imagen...
+### Experiencia
+En una ventana en la que el usuario puede realizar algun comentario de forma anonima de lo que le parecio la empresa, ya sea la atencion, la limpieza o la calidad de los alimentos que presenta.
+![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/foro1.png)
+![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/foro2.png)
 
 ##### Dependecias: Jquery, Materialize y Firebase
 
