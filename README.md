@@ -25,7 +25,7 @@ En la siguiente imagen podemos ver una de las categorias de alimentos de la empr
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Menu2.png)
 #### Otra categoria- Postres:
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Menu4.png)
-### Experiencia
+### Foro-Experiencia
 Es una ventana en la que el usuario puede realizar algun comentario de forma anonima de lo que le pareció la empresa, ya sea la atención, la limpieza o la calidad de los alimentos que presenta.
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Foro1.png)
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Foro2.png)
