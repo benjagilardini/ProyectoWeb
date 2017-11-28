@@ -10,11 +10,11 @@ Elegi realizar esta pagina web ya que como posee alimentos de muy buena calidad 
 ## Division de la Pagina
 ### Inicio
 Ventana principal donde se presenta la informacion basica, en la misma tenemos las novedades, el mapa para ubicar los locales mas cercanos, los combos semanales y algunas curiosidades de mac donalds.
-**Imagen del Inicio:**
+En la siguiente imagen tendremos la parte superior del inicio de la pagina web:
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio.png)
-**Segunda Imagen:**
+En esta imagen observaremos la parte inferior del inicio de la pagina web:
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio2.png)
-**Tercera Imagen:**
+En la siguiente imagen veremos la forma en que se muestran las novedades en la pagina de inicio:
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio3.png)
 ### Menu
 En la siguiente ventana se muestran los diferentes tipos de alimentos que presenta dicha empresa, tanto hamburguesas, ensaladas o postres.
