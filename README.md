@@ -13,7 +13,9 @@ Ventana principal donde se presenta la informacion basica, en la misma tenemos l
 **Imagen del Inicio:**
 ![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio.png)
 **Segunda Imagen:**
-![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio.png)
+![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio2.png)
+**Tercera Imagen:**
+![Algun texto](https://github.com/benjagilardini/ProyectoWeb/blob/master/static/Inicio3.png)
 ### Menu
 En la siguiente ventana se muestran los diferentes tipos de alimentos que presenta dicha empresa, tanto hamburguesas, ensaladas o postres.
 imagen...
